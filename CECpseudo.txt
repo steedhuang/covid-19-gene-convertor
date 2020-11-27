@@ -1,0 +1,46 @@
+Complex Evolution Coefficient pseudocode:
+
+1. Read the COVID-19 base pair consensus data;
+
+2. Find the data length 2m;
+
+3. Calculate the cyclic correlation coefficient C(R, m);
+
+4. The absolute value of the power exponent of C to the cyclic displacement R is taken as the correlation dimension DM;
+
+5. Self similar dimension d2 = dm (mean value of dimension DM) * 2 + 1;
+
+6. Calculate and record each growth point of correlation coefficient C;
+
+7. Select the maximum growth value Max and the minimum growth value Min respectively;
+
+8. Rising entropy Qsen = sqrt (Max / Min) - 1;
+
+9. The mean value of correlation coefficient Mean and standard deviation STD were calculated respectively;
+
+10. Falling entropy Qrel = (Mean + STD) / (Mean - STD) - 1;
+
+11. The histogram Hist of consensus data was calculated;
+
+12. Histogram is normalized and transformed into state probability graph P = Hist / sum (HIST);
+
+13. According to the definition of probability entropy, the flating entropy Qstat = - p * log P ;
+
+14. Mean square sum entropy q = sqrt (rising entropy ^ 2 + falling entropy ^ 2 + flating entropy ^ 2);
+
+15. Prime, which is uniformly distributed in logarithmic coordinates, is taken as the cutting method of data packet length;
+
+16. Defines the complex dispersion as the real part (imaginary part) dispersion IDC if the value is greater than (less than) the mean value;
+
+17. Each length are accumulated in groups, and then the dispersion IDC is calculated;
+
+18. The slope of the dispersion of real part (imaginary part) to the double logarithm coordinate of prime number sequence is calculated;
+
+19. Complex Hurst value CH = (SlopeR + 1) / 2 + i * (slopeI + 1) / 2;
+
+20. Mean square Hurst h = module (CH);
+
+21. Complex Evolution Coefficient CEC = (mean square entropy q * mean square Hurst h) / self similar dimension d2;
+
+22. Output the CEC value.
+
