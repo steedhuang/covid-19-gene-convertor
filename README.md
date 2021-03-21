@@ -9,3 +9,5 @@ Jun Steed Huang, Wandong Zhang, et al
 University of Ottawa, Carleton University, Ottawa, Canada
 Corresponding: 
 wzhan2@uottawa.ca
+
+[![View covid-19-gene-convertor on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/89047-covid-19-gene-convertor)
